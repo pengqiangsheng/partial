@@ -18,9 +18,9 @@ request({
     }
     const size = Number(res.headers['content-length']);
     const length = parseInt(size / SINGLE);
-    for (let i=0; i<length; i++) {
+    for (let i=0; i<=length; i++) {
         let start = i * SINGLE;
-        let end = i == length ? (i + 1) * SINGLE - 1 : size - 1;
+        let end = i == length ? size - 1 : (i + 1) * SINGLE - 1;
         request({
             method: 'GET',
             uri: SOURCE,

@@ -32,6 +32,7 @@ request({
             const match = /bytes ([0-9]*)-([0-9]*)/.exec(range);
             start = match[1];
             end = match[2];
+            console.log('下载范围：' + start + '-' + end)
         }).pipe(fs.createWriteStream(file, {start, end}));
     }
 });

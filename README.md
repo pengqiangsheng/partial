@@ -11,4 +11,4 @@
 ## 2.node index.js
 ## 3.另起一个cmd或者shell 输入 node client_index.js
 
-![]('img/node_part_trans.png')
+![](img/node_part_trans.png)
